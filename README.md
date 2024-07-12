@@ -7,7 +7,6 @@ This repository contains an image classification project using the CIFAR-10 data
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Training the Model](#training-the-model)
 - [Using the Pre-trained Model](#using-the-pre-trained-model)
 - [Acknowledgements](#acknowledgements)
 
@@ -44,10 +43,24 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
     ```bash
     pip install -r requirements.txt
     ```
-
-## Training the Model
-
-To train the model from scratch, run the following script:
+4.Using the Pre-trained Model
+To use the pre-trained model for making predictions on new images, run the following script:
 
 ```bash
-python train_model.py
+Copy code
+python classification.py --image path/to/your/image.jpg
+```
+Make sure to replace path/to/your/image.jpg with the actual path to the image you want to classify.
+
+Example Usage
+```bash
+Copy code
+python predict.py --image example.jpg
+```
+The script will output the predicted class and the confidence score.
+
+Acknowledgements
+CIFAR-10 Dataset for providing the dataset.
+Keras for the high-level neural networks API.
+TensorFlow for the underlying deep learning framework.
+Feel free to contribute to this project by submitting issues or pull requests!
