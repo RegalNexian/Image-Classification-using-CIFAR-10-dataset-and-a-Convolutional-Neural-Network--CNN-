@@ -1,5 +1,4 @@
 # Image Classification using CIFAR-10 dataset and a Convolutional Neural Network (CNN)
- # Image Classification with CIFAR-10 and Keras
 
 This repository contains an image classification project using the CIFAR-10 dataset and a Convolutional Neural Network (CNN) implemented with Keras. The model is trained to classify images into one of ten categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.
 
