@@ -29,8 +29,7 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/image-classification.git
-    cd image-classification
+    https://github.com/RegalNexian/Image-Classification-using-CIFAR-10-dataset-and-a-Convolutional-Neural-Network--CNN-.git
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
