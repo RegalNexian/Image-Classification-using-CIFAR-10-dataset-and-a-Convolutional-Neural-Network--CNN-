@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 # Load CIFAR-10 dataset
 (training_images, training_labels), (testing_images, testing_labels) = datasets.cifar10.load_data()
 
-# Normalize images
+
 training_images, testing_images = training_images / 255.0, testing_images / 255.0
 
-# Class names
+
 className = ['Plane', 'Car', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
-# Display sample images
+
 for i in range(16):
     plt.subplot(4, 4, i + 1)
     plt.xticks([])
@@ -24,7 +24,6 @@ for i in range(16):
 
 plt.show()
 
-# Reduce the dataset size for faster training (optional)
 training_images, training_labels = training_images[:20000], training_labels[:20000]
 testing_images, testing_labels = testing_images[:4000], testing_labels[:4000]
 
@@ -39,13 +38,13 @@ model.add(layers.Flatten())
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))
 
-# Compile the model
+
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-# Train the model
+
 model.fit(training_images, training_labels, epochs=50, validation_data=(testing_images, testing_labels))
 
-# Evaluate the model
+
 loss, accuracy = model.evaluate(testing_images, testing_labels)
 print(f"Loss: {loss}")
 print(f"Accuracy: {accuracy}")
