@@ -49,7 +49,3 @@ model.fit(training_images, training_labels, epochs=50, validation_data=(testing_
 loss, accuracy = model.evaluate(testing_images, testing_labels)
 print(f"Loss: {loss}")
 print(f"Accuracy: {accuracy}")
-
-# Save the model
-model.save('D:/Program/Python/Practise/AI/Practise/Image Classification/Image Classification.keras')
-model.save('D:/Program/Python/Practise/AI/Practise/Image Classification/Image Classification.h5')
